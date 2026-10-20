@@ -1,0 +1,5 @@
+[patch."https://github.com/nautechsystems/nautilus_trader"]
+nautilus-common = { git = "https://github.com/imbolc/nautilus_trader", branch = "fix-polymarket-event-metadata-duplication" }
+nautilus-model = { git = "https://github.com/imbolc/nautilus_trader", branch = "fix-polymarket-event-metadata-duplication" }
+nautilus-network = { git = "https://github.com/imbolc/nautilus_trader", branch = "fix-polymarket-event-metadata-duplication" }
+nautilus-polymarket = { git = "https://github.com/imbolc/nautilus_trader", branch = "fix-polymarket-event-metadata-duplication" }

@@ -1,0 +1,20 @@
+[package]
+name = "nautilus-polymarket-event-data-bench"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.99"
+
+[dependencies]
+anyhow = "1"
+nautilus-common = { git = "https://github.com/nautechsystems/nautilus_trader", rev = "c6cada8ac8a82b305aa0fbd7948afa504eb40f46", features = ["live"] }
+nautilus-model = { git = "https://github.com/nautechsystems/nautilus_trader", rev = "c6cada8ac8a82b305aa0fbd7948afa504eb40f46" }
+nautilus-network = { git = "https://github.com/nautechsystems/nautilus_trader", rev = "c6cada8ac8a82b305aa0fbd7948afa504eb40f46", default-features = false }
+nautilus-polymarket = { git = "https://github.com/nautechsystems/nautilus_trader", rev = "c6cada8ac8a82b305aa0fbd7948afa504eb40f46" }
+serde_json = { version = "1", features = ["raw_value"] }
+tabled = { version = "0.22", default-features = false, features = ["std"] }
+tiny_http = "0.12"
+tokio = { version = "1", features = ["macros", "rt", "sync"] }
+url = "2"
+
+[lints.rust]
+unsafe_code = "forbid"
